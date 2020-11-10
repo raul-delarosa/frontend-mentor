@@ -1,0 +1,194 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    color: hsl(238, 29%, 16%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.2rem;
+    height: 100vh;
+    line-height: 18px;
+    margin: auto;
+    max-width: 375px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row__column {
+    flex-basis: auto;
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.faq-accordion-card {
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 150px 27px 21px 21px;
+    padding-bottom: 25px;
+}
+
+.faq-accordion-card__accordion {
+    margin: 15px;
+    position: relative;
+}
+
+.faq-accordion-card__accordion__header {
+    margin-left: 2px;
+    padding-top: 3px;
+}
+
+.faq-accordion-card__accordion__header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.faq-accordion-card__accordion__questions {
+    margin-top: 39px;
+}
+
+.faq-accordion-card__accordion__questions__question {
+    margin-left: 5px;
+}
+
+.faq-accordion-card__accordion__button {
+    background-color: #ffffff;
+    border: none;
+    color: hsl(237, 12%, 33%);
+    cursor: pointer;
+    font-size: 1.3rem;
+    outline: none;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.faq-accordion-card__accordion__button--active {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.faq-accordion-card__accordion__button__arrow {
+    margin-top: 3px;
+    position: absolute;
+    right: 8px;
+}
+
+.faq-accordion-card__accordion__button--active .faq-accordion-card__accordion__button__arrow {
+    transform: rotate(180deg);
+}
+
+.faq-accordion-card__accordion__panel {
+    display: none;
+    margin: 9px 14px 15px 5px;
+}
+
+.faq-accordion-card__accordion__separator {
+    border-color: hsl(240, 5%, 91%);
+    border-style: solid;
+    margin: 13px 12px 17px 11px;
+}
+
+.faq-accordion-card__illustration-box {
+    flex-basis: 0;
+    position: relative;
+}
+
+.faq-accordion-card__illustration-box__img {
+    position: absolute;
+    display: none;
+}
+
+.faq-accordion-card__image-box {
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 127px;
+    position: relative;
+}
+
+.faq-accordion-card__image-box picture img {
+    display: block;
+    right: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -108px;
+}
+
+/* Desktop */
+@media screen and (min-width: 376px) {
+    body {
+        max-width: 1440px;
+    }
+
+    .row  {
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row__column {
+        flex-basis: 50%;
+    }
+
+    .faq-accordion-card {
+        max-width: 920px;
+        min-height: 509px;
+        padding-bottom: 0;
+    }
+
+    .faq-accordion-card__accordion__header {
+        margin-left: 16px;
+        margin-top: 61px;
+    }
+
+    .faq-accordion-card__accordion__header h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .faq-accordion-card__accordion__button:hover {
+        color: hsl(14, 88%, 65%);
+    }
+
+    .faq-accordion-card__accordion__questions {
+        margin-left: 6px;
+        margin-top: 44px;
+        max-width: 351px;
+    }
+
+    .faq-accordion-card__illustration-box__img {
+        display: inline;
+        left: -93px;
+        top: 204px;
+        z-index: 1;
+    }
+
+    .faq-accordion-card__image-box {
+        background-image: url("../images/bg-pattern-desktop.svg");
+        background-position: -575px -294px;
+        background-repeat: no-repeat;
+        background-size: 964px;
+        height: 509px;
+        overflow: hidden;
+    }
+
+    .faq-accordion-card__image-box picture img {
+        left: -84px;
+        top: 70px;
+    }
+}
