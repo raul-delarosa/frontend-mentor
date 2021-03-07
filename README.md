@@ -1,2 +1,2 @@
 # frontend-mentor
-My journey to lean front end.
+My journey to learn front end.
