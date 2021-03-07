@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/brands.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <section class="container">
+    <img class="container__logo" src="images/logo.svg" alt="logo">
+    <h1 class="container__title">We are launching <span class="container__title__bold">soon!</span></h1>
+    <form class="container__form" novalidate>
+      <label for="email" class="container__form__label">
+        Subscribe and get notified
+      </label>
+      <div class="container__form__email-wrapper">
+        <input id="email" class="container__form__email-wrapper__email" data-email type="email" placeholder="Your email address…">
+        <span class="container__form__email-wrapper__email-error" data-email-error aria-live="polite">Please provide a valid email address</span>
+      </div>
+      <button class="container__form__button">Notify Me</button>
+    </form>
+    <img class="container__illustration" src="images/illustration-dashboard.png" alt="dashboard">
+  </section>
+  <footer class="footer">
+    <div class="footer__social-icons">
+      <a class="footer__social-icons__link" href="https://facebook.com">
+        <i class="fab fa-facebook-f footer__social-icons__link__icon"></i>
+      </a>
+      <a class="footer__social-icons__link" href="https://twitter.com">
+        <i class="fab fa-twitter footer__social-icons__link__icon"></i>
+      </a>
+      <a class="footer__social-icons__link" href="https://instagram.com">
+        <i class="fab fa-instagram footer__social-icons__link__icon"></i>
+      </a>
+    </div>
+    <div class="footer__copyright">&copy; Copyright Ping. All rights reserved.</div>
+  </footer>
+  <script type="application/javascript" src="./js/main.js"></script>
+</body>
+</html>
